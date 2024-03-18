@@ -7,7 +7,8 @@ export const UserView = () =>
     const dispatch = useDispatch();
     const users = useSelector((state) => state.user);
 
-    useEffect( () => {
+    useEffect( () =>
+    {
         dispatch(fetchUsers());
     }, []);
 
