@@ -33,7 +33,7 @@ const userSlice = createSlice({
         {
             state.loading = false;
             state.users = [];
-            state.error = action.error.message;
+            state.error = action?.error.message || 'Something went wrong';
         });
     }
 });
